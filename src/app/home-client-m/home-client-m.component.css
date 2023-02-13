@@ -1,0 +1,110 @@
+.home-container {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  align-items: center;
+
+  background: #f9f9fa;
+}
+.name-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 168.08px;
+  height: 44px;
+  left: 16px;
+  top: 38px;
+}
+
+.name-text1 {
+  width: 87px;
+  height: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+
+  color: #474747;
+}
+
+.name-text2 {
+  width: 153px;
+  height: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: -0.15px;
+
+  color: #747474;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.profile-container {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 299px;
+  top: 38px;
+}
+
+.profile-picture {
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  border: 0.5px solid #c6c4b8;
+}
+
+.banner {
+  position: absolute;
+  width: 328px;
+  height: 120px;
+  left: 16px;
+  top: 149px;
+}
+.container318 {
+  position: absolute;
+  width: 328px;
+  height: 242px;
+  left: 16px;
+  top: 333px;
+}
+
+.car-card {
+  /* Service Card */
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
