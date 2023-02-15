@@ -7,9 +7,11 @@ import { PrimengModule } from './common/primeng/primeng.module';
 import { HeaderComponent } from './header/header.component';
 import { HomeClientComponent } from './home-client/home-client.component';
 import { HomeClientMComponent } from './home-client-m/home-client-m.component';
+import { AdminComponent } from './admin/admin.component';
+import { ClientCarListComponent } from './client-car-list/client-car-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeClientComponent, HomeClientMComponent],
+  declarations: [AppComponent, HeaderComponent, HomeClientComponent, HomeClientMComponent, AdminComponent, ClientCarListComponent],
   imports: [BrowserModule, AppRoutingModule, PrimengModule],
   providers: [],
   bootstrap: [AppComponent],
