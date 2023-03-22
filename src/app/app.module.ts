@@ -10,9 +10,10 @@ import { HomeClientMComponent } from './home-client-m/home-client-m.component';
 import { AdminComponent } from './admin/admin.component';
 import { ClientCarListComponent } from './client-car-list/client-car-list.component';
 import { ServiceListComponent } from './service-list/service-list.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeClientComponent, HomeClientMComponent, AdminComponent, ClientCarListComponent, ServiceListComponent],
+  declarations: [AppComponent, HeaderComponent, HomeClientComponent, HomeClientMComponent, AdminComponent, ClientCarListComponent, ServiceListComponent, LoginComponent],
   imports: [BrowserModule, AppRoutingModule, PrimengModule],
   providers: [],
   bootstrap: [AppComponent],

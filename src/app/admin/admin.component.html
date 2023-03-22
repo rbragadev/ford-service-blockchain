@@ -33,62 +33,7 @@
                 <i class="pi pi-home text-xl"></i>
               </a>
             </li>
-            <li class="mb-2">
-              <a
-                pRipple
-                class="flex align-items-center cursor-pointer py-3 pl-0 pr-2 justify-content-center hover:bg-indigo-600 text-indigo-100 hover:text-indigo-50 transition-duration-150 transition-colors"
-                (click)="activeTab2 = 1"
-                [ngClass]="{ 'bg-indigo-500': activeTab2 === 1 }"
-                style="
-                  border-top-left-radius: 30px;
-                  border-bottom-left-radius: 30px;
-                "
-              >
-                <i class="pi pi-bookmark text-xl"></i>
-              </a>
-            </li>
-            <li class="mb-2">
-              <a
-                pRipple
-                class="flex align-items-center cursor-pointer py-3 pl-0 pr-2 justify-content-center hover:bg-indigo-600 text-indigo-100 hover:text-indigo-50 transition-duration-150 transition-colors"
-                (click)="activeTab2 = 2"
-                [ngClass]="{ 'bg-indigo-500': activeTab2 === 2 }"
-                style="
-                  border-top-left-radius: 30px;
-                  border-bottom-left-radius: 30px;
-                "
-              >
-                <i class="pi pi-users text-xl"></i>
-              </a>
-            </li>
-            <li class="mb-2">
-              <a
-                pRipple
-                class="flex align-items-center cursor-pointer py-3 pl-0 pr-2 justify-content-center hover:bg-indigo-600 text-indigo-100 hover:text-indigo-50 transition-duration-150 transition-colors"
-                (click)="activeTab2 = 3"
-                [ngClass]="{ 'bg-indigo-500': activeTab2 === 3 }"
-                style="
-                  border-top-left-radius: 30px;
-                  border-bottom-left-radius: 30px;
-                "
-              >
-                <i class="pi pi-comments text-xl"></i>
-              </a>
-            </li>
-            <li class="mb-2">
-              <a
-                pRipple
-                class="flex align-items-center cursor-pointer py-3 pl-0 pr-2 justify-content-center hover:bg-indigo-600 text-indigo-100 hover:text-indigo-50 transition-duration-150 transition-colors"
-                (click)="activeTab2 = 4"
-                [ngClass]="{ 'bg-indigo-500': activeTab2 === 4 }"
-                style="
-                  border-top-left-radius: 30px;
-                  border-bottom-left-radius: 30px;
-                "
-              >
-                <i class="pi pi-calendar text-xl"></i>
-              </a>
-            </li>
+
             <li class="mb-2">
               <a
                 pRipple
@@ -135,87 +80,57 @@
           </button>
         </div>
         <div class="border-round flex-auto">
-          <div
-            class="p-3 font-medium text-2xl text-white"
-            [ngClass]="{ hidden: activeTab2 !== 0 }"
-          >
-            Dashboard
-          </div>
-          <div
-            class="p-3 font-medium text-2xl text-white"
-            [ngClass]="{ hidden: activeTab2 !== 1 }"
-          >
-            Bookmarks
-          </div>
-          <div
-            class="p-3 font-medium text-2xl text-white"
-            [ngClass]="{ hidden: activeTab2 !== 2 }"
-          >
-            Team
-          </div>
-          <div
-            class="p-3 font-medium text-2xl text-white"
-            [ngClass]="{ hidden: activeTab2 !== 3 }"
-          >
-            Messages
-          </div>
-          <div
-            class="p-3 font-medium text-2xl text-white"
-            [ngClass]="{ hidden: activeTab2 !== 4 }"
-          >
-            Calendar
-          </div>
-          <div class="" [ngClass]="{ hidden: activeTab2 !== 5 }">
-            <div class="p-3 font-medium text-2xl text-white mb-5">Settings</div>
+          <div [ngClass]="{ hidden: activeTab2 !== 0 }">
+            <div class="p-3 font-medium text-2xl text-white mb-5">My Cars</div>
             <ul class="list-none p-0 m-0 text-white">
-              <li
-                class="mb-3 flex align-items-start bg-indigo-700 p-3"
-                style="border-radius: 12px"
+              <a style="text-decoration: none" class="text-white" href=""
+                ><li
+                  class="mb-3 flex align-items-start bg-indigo-700 p-3"
+                  style="border-radius: 12px"
+                >
+                  <i class="pi pi-user text-xl mr-3"></i>
+                  <div class="flex flex-column">
+                    <span>My Cars</span>
+                    <p class="mt-2 mb-0 line-height-3 text-indigo-200">
+                      Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                    </p>
+                  </div>
+                </li></a
               >
-                <i class="pi pi-user text-xl mr-3"></i>
-                <div class="flex flex-column">
-                  <span>Account</span>
-                  <p class="mt-2 mb-0 line-height-3 text-indigo-200">
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-              <li
-                class="mb-3 flex align-items-start p-3"
-                style="border-radius: 12px"
+            </ul>
+          </div>
+
+          <div class="" [ngClass]="{ hidden: activeTab2 !== 5 }">
+            <div class="p-3 font-medium text-2xl text-white mb-5">Events</div>
+            <ul class="list-none p-0 m-0 text-white">
+              <a style="text-decoration: none" class="text-white" href="">
+                <li
+                  class="mb-3 flex align-items-start bg-indigo-700 p-3"
+                  style="border-radius: 12px"
+                >
+                  <i class="pi pi-user text-xl mr-3"></i>
+                  <div class="flex flex-column">
+                    <span>Add Event</span>
+                    <p class="mt-2 mb-0 line-height-3 text-indigo-200">
+                      Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                    </p>
+                  </div>
+                </li></a
               >
-                <i class="pi pi-inbox text-xl mr-3"></i>
-                <div class="flex flex-column">
-                  <span>Inbox</span>
-                  <p class="mt-2 mb-0 line-height-3 text-indigo-200">
-                    Condimentum vitae sapien pellentesque habitant.
-                  </p>
-                </div>
-              </li>
-              <li
-                class="mb-3 flex align-items-start p-3"
-                style="border-radius: 12px"
+              <a style="text-decoration: none" class="text-white" href="">
+                <li
+                  class="mb-3 flex align-items-start p-3"
+                  style="border-radius: 12px"
+                >
+                  <i class="pi pi-inbox text-xl mr-3"></i>
+                  <div class="flex flex-column">
+                    <span>Transfer</span>
+                    <p class="mt-2 mb-0 line-height-3 text-indigo-200">
+                      Condimentum vitae sapien pellentesque habitant.
+                    </p>
+                  </div>
+                </li></a
               >
-                <i class="pi pi-credit-card text-xl mr-3"></i>
-                <div class="flex flex-column">
-                  <span>Sales</span>
-                  <p class="mt-2 mb-0 line-height-3 text-indigo-200">
-                    Egestas integer eget aliquet nibh praesent tristique.
-                  </p>
-                </div>
-              </li>
-              <li
-                class="mb-3 flex align-items-start p-3"
-                style="border-radius: 12px"
-              >
-                <i class="pi pi-lock text-xl mr-3"></i>
-                <div class="flex flex-column">
-                  <span>Privacy</span>
-                  <p class="mt-2 mb-0 line-height-3 text-indigo-200">
-                    In ante metus dictum at tempor commodo ullamcorper a lacus.
-                  </p>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
