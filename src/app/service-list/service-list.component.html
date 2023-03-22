@@ -6,10 +6,8 @@
     <div class="surface-card shadow-2 border-round p-4">
       <div class="flex justify-content-between align-items-center mb-5">
         <span class="text-lg text-900 font-medium"
-          >MANTENHA A QUALIDADE DO VEICULO
-          <span class="block text-900 font-medium mb-1"
-            >Confira as proximas manutenções</span
-          ></span
+          >ADICIONE ALGUM EVENTO
+          <span class="block text-900 font-medium mb-1">subtitulo</span></span
         >
       </div>
       <ul class="list-none p-0 m-0">
@@ -23,11 +21,8 @@
               style="width: 45px; height: 45px"
             />
             <div class="mr-0 md:mr-8">
-              <span class="block text-900 font-medium mb-1">Troca de Oleo</span>
-              <div class="text-600">
-                Atenção, A troca de oleo esta chegando, agende o serviço e
-                mantenha sua nota:
-              </div>
+              <span class="block text-900 font-medium mb-1">Algum Nome</span>
+              <div class="text-600">Algum Dado</div>
             </div>
           </div>
           <div class="mt-2 md:mt-0 flex flex-nowrap">
@@ -43,7 +38,7 @@
 
       <div class="surface-card p-4 shadow-2 border-round p-fluid">
         <div class="grid formgrid p-fluid">
-          <div class="field mb-4 col-12 md:col-6">
+          <!--div class="field mb-4 col-12 md:col-6">
             <label for="company_name" class="font-medium text-900"
               >Select Assistence</label
             >
@@ -54,24 +49,24 @@
               >Select Date</label
             >
             <input id="invoice_id" type="text" pInputText />
-          </div>
+          </div-->
 
           <div class="field mb-4 col-12 md:col-6">
             <label for="select_date" class="font-medium text-900"
-              >Atual KM</label
+              >Service</label
             >
             <input id="select_date" type="text" pInputText />
           </div>
           <div class="field mb-4 col-12 md:col-6">
-            <label for="due_date" class="font-medium text-900">Date</label>
-            <p-calendar id="due_date" [showIcon]="true"></p-calendar>
+            <label for="due_date" class="font-medium text-900">Issuer</label>
+            <p-calendar id="due_date" [showIcon]="false"></p-calendar>
           </div>
           <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
           <div class="field mb-4 col-12 md:col-6">
-            <label for="item" class="font-medium text-900">Service</label>
+            <label for="item" class="font-medium text-900">Atual KM</label>
             <input id="item" type="text" pInputText />
           </div>
-          <div class="field mb-4 col-6 md:col-3">
+          <!--div class="field mb-4 col-6 md:col-3">
             <label for="quantity" class="font-medium text-900">Quantity</label>
             <input id="quantity" type="text" pInputText />
           </div>
@@ -110,7 +105,7 @@
           <div class="field mb-4 col-12 flex align-items-center">
             <p-checkbox [binary]="true"></p-checkbox>
             <span class="ml-2 text-900">Taxable (VAT 18%)</span>
-          </div>
+          </div-->
           <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
           <div class="field mb-4 col-12">
             <label for="notes" class="font-medium text-900">Observações</label>
@@ -126,7 +121,7 @@
         <button
           pButton
           pRipple
-          label="Create Invoice"
+          label="Create Event"
           icon="pi pi-file"
           class="w-auto"
         ></button>
