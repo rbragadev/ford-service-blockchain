@@ -11,9 +11,11 @@ import { AdminComponent } from './admin/admin.component';
 import { ClientCarListComponent } from './client-car-list/client-car-list.component';
 import { ServiceListComponent } from './service-list/service-list.component';
 import { LoginComponent } from './login/login.component';
+import { TransferComponent } from './transfer/transfer.component';
+import { CarComponent } from './car/car.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeClientComponent, HomeClientMComponent, AdminComponent, ClientCarListComponent, ServiceListComponent, LoginComponent],
+  declarations: [AppComponent, HeaderComponent, HomeClientComponent, HomeClientMComponent, AdminComponent, ClientCarListComponent, ServiceListComponent, LoginComponent, TransferComponent, CarComponent],
   imports: [BrowserModule, AppRoutingModule, PrimengModule],
   providers: [],
   bootstrap: [AppComponent],
